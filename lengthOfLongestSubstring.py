@@ -36,6 +36,8 @@ class Solution(object):
                 stBest=stCur
                 bestLength=currentLength
             k+=1
+            if L-k + currentLength<bestLength:
+                return bestLength
         #bestString=a[stBest:stBest+bestLength]
         return bestLength
             
